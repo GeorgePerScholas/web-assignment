@@ -11,7 +11,14 @@ ul{
 	font-family: 'Black Ops One', arial, sans-serif;
 	background-color: rgb(0,0,0);
 	color: rgb(256,256,256);
-	margin-top: 0px}
+	margin-top: 0px;
+	list-style-type: none;
+}
+
+li a:hover {
+	background-color: (256,0,0);
+	color: rgb(256,256,256);
+}
 
 h1{
 	font-size: 60px;
@@ -23,10 +30,14 @@ h1{
 h3{
 	font-family: 'Black Ops One', arial, sans-serif;
 	color: rgb(256,256,256);
-	font-kerning: 3px;
+	letter-spacing: 2px;
 	background-color: rgb(256,0,0);
 	padding: 20px;
 }
+h3 .capitalize{
+	text-transform: capitalize;
+}
+
 .header{
 	background-image: url("../images/banner.png");
 	background-size: 100%;
@@ -34,30 +45,76 @@ h3{
 	flex:1;
 	flex-direction: column-reverse;
 	margin-bottom: 10px;
+	
 }
 
 .layout{
 	display:flex;
 	flex-direction: row;
+	margin-top: 10px;
 	margin-right: 0px;
+}
+
+.popwindow{
+	display: flex;
+	
+}
+.profile{
+	width: 500px;
+	height: 5px;
+}
+
+.profile img{
+	max-width: 500px;
+
 
 }
 
-
 #nav{
-	column-width: 155px;
-	padding:25px;
+	column-width: 200px;
+	padding-top: 25px;
+	margin-right: 10px;
+	margin-top: 10px;
 	font-family: arial, bold;
-	font-size: x-large;
+	font-size: large;
 	background-color: rgb(0,0,0);
 	color: rgb(256,256,256);
 	order: 1;
 }
 
+#navtop{
+	display: flex;
+	padding-right: 10px;
+	padding-left: 10px;
+	justify-content: space-between;
+	margin: 10px;
+	
+	color: rgb(256,256,256);
+}
+
+#topbutton{
+	background-color: rgb(256,256,256);
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family: 'Black Ops One', arial, sans-serif;
+	font-size: large;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+#topbutton a:hover {
+	background-color: (256,0,0);
+	color: rgb(256,0,0);
+}
+
+
 #main{
 	flex:3;
 	order:2;
 	padding: 0px;
+	margin-top: 10px;
 	margin-left: 10px;
 	color: (256,256,256);
 	background-color: rgb(0,0,0);
@@ -67,6 +124,7 @@ h3{
 	flex:3;
 	order:2;
 	margin-left:10px;
+	margin-top: 10px;
 	background-color: rgb(0,0,0);
 	color: rgb(256,256,256);
 }
